@@ -3,4 +3,8 @@ project(ProiectInfo)
 
 set(CMAKE_CXX_STANDARD 20)
 
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+
 add_executable(ProiectInfo main.cpp)
+
+target_link_libraries(ProiectInfo PRIVATE Qt6::Widgets)
