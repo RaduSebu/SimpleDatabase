@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ProiectInfo_FILE /home/geoki/CLionProjects/ProiectInfo/build/ProiectInfo)
+set(__QT_DEPLOY_TARGET_ProiectInfo_TYPE EXECUTABLE)

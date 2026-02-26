@@ -1,0 +1,3 @@
+/home/geoki/CLionProjects/ProiectInfo/build/CMakeFiles/ProiectInfo.dir
+/home/geoki/CLionProjects/ProiectInfo/build/CMakeFiles/edit_cache.dir
+/home/geoki/CLionProjects/ProiectInfo/build/CMakeFiles/rebuild_cache.dir
