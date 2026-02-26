@@ -26,7 +26,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="Primul Gui" />
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="data">
+      <change afterPath="$PROJECT_DIR$/gui.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +104,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -110,7 +121,7 @@
       <workItem from="1772051314936" duration="237000" />
       <workItem from="1772051568178" duration="392000" />
       <workItem from="1772094808554" duration="1427000" />
-      <workItem from="1772133054397" duration="366000" />
+      <workItem from="1772133054397" duration="4728000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -128,7 +139,23 @@
       <option name="project" value="LOCAL" />
       <updated>1772133079091</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="data">
+      <option name="closed" value="true" />
+      <created>1772133604217</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772133604217</updated>
+    </task>
+    <task id="LOCAL-00004" summary="data">
+      <option name="closed" value="true" />
+      <created>1772133631913</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772133631913</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Qt" />
     <MESSAGE value="Primul Gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primul Gui" />
+    <MESSAGE value="data" />
+    <option name="LAST_COMMIT_MESSAGE" value="data" />
   </component>
 </project>
