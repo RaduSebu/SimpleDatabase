@@ -26,11 +26,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="data">
-      <change afterPath="$PROJECT_DIR$/gui.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui.h" afterDir="false" />
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gui.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.h" beforeDir="false" afterPath="$PROJECT_DIR$/gui.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,18 +44,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RaduSebu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RaduSebu&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RaduSebu/ProiectInfo1.git",
-    "accountId": "d853f521-72ca-45ae-8086-160ce59705ea"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RaduSebu/ProiectInfo1.git&quot;,
+    &quot;accountId&quot;: &quot;d853f521-72ca-45ae-8086-160ce59705ea&quot;
   }
-}]]></component>
+}</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="uqwT70jR" />
   </component>
@@ -104,11 +103,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -121,7 +115,8 @@
       <workItem from="1772051314936" duration="237000" />
       <workItem from="1772051568178" duration="392000" />
       <workItem from="1772094808554" duration="1427000" />
-      <workItem from="1772133054397" duration="4728000" />
+      <workItem from="1772133054397" duration="4748000" />
+      <workItem from="1772188068960" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -155,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772133631913</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="?">
+      <option name="closed" value="true" />
+      <created>1772138376242</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772138376242</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +173,7 @@
     <MESSAGE value="Qt" />
     <MESSAGE value="Primul Gui" />
     <MESSAGE value="data" />
-    <option name="LAST_COMMIT_MESSAGE" value="data" />
+    <MESSAGE value="?" />
+    <option name="LAST_COMMIT_MESSAGE" value="?" />
   </component>
 </project>

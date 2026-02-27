@@ -6,15 +6,9 @@
 
 class gui {
 private:
-    QWidget &w;
-    QVBoxLayout &layout;
-    QPushButton &list_button;
-    QPushButton &add_button;
-    QPushButton &remove_button;
-    QPushButton &info_button;
-    QPushButton &exit_button;
+    QWidget* w;
 public:
-    explicit gui(QWidget *parent);
+    gui();
 
     void exec();
 };
