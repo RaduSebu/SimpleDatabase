@@ -7,6 +7,8 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 add_executable(ProiectInfo main.cpp
         gui.cpp
+        manager.cpp
+        manager.h
 )
 
 target_link_libraries(ProiectInfo PRIVATE Qt6::Widgets)
