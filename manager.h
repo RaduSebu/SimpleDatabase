@@ -10,17 +10,26 @@ using namespace std;
 
 class manager {
 private:
-    string selection;
+
+public:
     struct item {
         string name, description;
-        int price, count, id;
+        int count;
+        double price;
     };
-    void setline(int line, item item);
-    item getline(int line);
-    item getalllines();
-    void addline(item item);
-public:
+
+    struct items {
+        int nr{};
+        item itemm[1000000];
+    };
+
     manager();
+
+    static void setline(int line, item item);
+    static item getline(int line);
+    static items getalllines();
+    static void addline(item item);
+
     void additem (item item);
     void removeitem (int id);
     item readitem(int id);
