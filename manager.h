@@ -19,8 +19,8 @@ public:
     };
 
     struct items {
-        int nr{};
-        item itemm[1000000];
+        int nr;
+        item itemm[100];
     };
 
     manager();
@@ -29,11 +29,11 @@ public:
     static item getline(int line);
     static items getalllines();
     static void addline(item item);
+    static int getnumberoflines();
 
-    void additem (item item);
-    void removeitem (int id);
-    item readitem(int id);
     string getinfo();
+    void printitem(item item);
+    void printitems(items items);
 };
 
 

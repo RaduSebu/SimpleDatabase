@@ -26,11 +26,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="manager functii de citire">
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="manager functii de citire si scriere">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database" beforeDir="false" afterPath="$PROJECT_DIR$/database" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.h" beforeDir="false" afterPath="$PROJECT_DIR$/gui.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/manager.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +100,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="ProiectInfo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ProiectInfo" TARGET_NAME="ProiectInfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ProiectInfo" RUN_TARGET_NAME="ProiectInfo">
+    <configuration name="ProiectInfo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ProiectInfo" TARGET_NAME="ProiectInfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ProiectInfo" RUN_TARGET_NAME="ProiectInfo">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -120,7 +122,8 @@
       <workItem from="1772308723875" duration="2323000" />
       <workItem from="1772377653907" duration="30000" />
       <workItem from="1772560531267" duration="5209000" />
-      <workItem from="1772619961325" duration="2634000" />
+      <workItem from="1772619961325" duration="2961000" />
+      <workItem from="1772623162563" duration="3739000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -194,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772566222359</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="manager functii de citire si scriere">
+      <option name="closed" value="true" />
+      <created>1772622617037</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1772622617037</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +225,7 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="manager prim" />
     <MESSAGE value="manager functii de citire" />
-    <option name="LAST_COMMIT_MESSAGE" value="manager functii de citire" />
+    <MESSAGE value="manager functii de citire si scriere" />
+    <option name="LAST_COMMIT_MESSAGE" value="manager functii de citire si scriere" />
   </component>
 </project>

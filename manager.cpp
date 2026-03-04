@@ -2,50 +2,53 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
-string s, sp[1000000];
+#include <vector>
+fstream f("data/database", ios::in | ios::out | ios::app);
+string s;
 using namespace std;
-manager::manager() {};
-
-void manager::setline(int line, item item) {
-    fstream f("database");
-    f.clear();
-    f.seekg(0);
-    f.seekp(0);
-
+manager::manager() {
     if (f.is_open()) {
         std::cout << "File opened correctly\n";
     }
     else {
-        std::cerr << "Error opening file\n";
+        f.close();
+        f.open("data/database", ios::app);
+        if (f.is_open()) {
+            std::cout << "Created file\n";
+        }
+        else {
+            std::cerr << "Error opening file\n";
+        }
     }
+};
 
-    int i = 1;
+void manager::setline(int line, item item) {
+    f.close();
+    f.open("data/database", ios::in);
+    f.clear();
 
-    ostringstream sout;
-    sout << item.name << ' ' << item.count << ' ' << item.price << ' ' << item.description;
+    vector<std::string> lines;
 
     while (std::getline(f, s)) {
-        if (i == line) {
-            s = sout.str();
-        }
-        f << s << "\n";
-        i++;
+        lines.push_back(s);
     }
     f.close();
+
+    std::ostringstream sout;
+    sout << item.name << ' ' << item.count << ' ' << item.price << ' ' << item.description;
+    lines[line - 1] = sout.str();
+    cout << "wrote line to file\n";
+
+    f.open("data/database", ios::out | ios::trunc);
+    for (string& l : lines) {
+        f << l << "\n";
+    }
 }
 
 manager::item manager::getline(int line) {
-    fstream f("database");
+    f.close();
+    f.open("data/database");
     f.clear();
-    f.seekg(0);
-    f.seekp(0);
-
-    if (f.is_open()) {
-        std::cout << "File opened correctly\n";
-    }
-    else {
-        std::cerr << "Error opening file\n";
-    }
 
     int i = 0;
     for (i; i < line; i++) {
@@ -53,46 +56,47 @@ manager::item manager::getline(int line) {
     }
 
     istringstream sin(s);
-    cout << s;
     item item;
     sin >> item.name >> item.count >> item.price >> item.description;
-    f.close();
     return item;
 }
 
 manager::items manager::getalllines() {
-    fstream f("database");
-    f.clear();
-    f.seekg(0);
-    f.seekp(0);
-
-    if (f.is_open()) {
-        std::cout << "File opened correctly\n";
-    }
-    else {
-        std::cerr << "Error opening file\n";
-    }
-
-    int i = 0;
-    item item[1000000];
-    while (std::getline(f, sp[i])) {
-        i++;
-        istringstream sin(sp[i]);
-        sin >> item[i].name >> item[i].count >> item[i].price >> item[i].description;
-    }
+    int i = 1;
     items items;
-    for (int j = 0; j <= i; j++) {
-        items.itemm[j] = item[j];
+    for (int j = 1; j <= i; j++) {
+        items.itemm[j] = getline(j);
+        if (items.itemm[j].name.length() > 0) {
+            i++;
+        }
     }
-    items.nr = i;
-    f.close();
+    items.nr = i - 1;
     return items;
 }
 
-void manager::addline(item item) {
+int manager::getnumberoflines() {
+    int i = 1;
+    while (getline(i).name.length() > 0) i++;
+    return i - 1;
+}
 
+void manager::addline(item item) {
+    items items = getalllines();
+    setline(items.nr + 1, item);
 }
 
 string manager::getinfo() {
     return "Facut cu iubire de Radu Andrei Sebastian!";
+}
+
+void manager::printitem(item item) {
+    ostringstream sout;
+    sout << item.name << ' ' << item.count << ' ' << item.price << ' ' << item.description << endl;
+    cout << sout.str();
+}
+
+void manager::printitems(items items) {
+    for (int i = 1; i <= items.nr; i++) {
+        printitem(items.itemm[i]);
+    }
 }
