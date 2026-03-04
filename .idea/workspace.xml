@@ -26,12 +26,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="manager prim">
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="manager functii de citire">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database" beforeDir="false" afterPath="$PROJECT_DIR$/database" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/manager.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,8 @@
       <workItem from="1772188068960" duration="3083000" />
       <workItem from="1772308723875" duration="2323000" />
       <workItem from="1772377653907" duration="30000" />
-      <workItem from="1772560531267" duration="5056000" />
+      <workItem from="1772560531267" duration="5209000" />
+      <workItem from="1772619961325" duration="2634000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -186,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772195150286</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="manager functii de citire">
+      <option name="closed" value="true" />
+      <created>1772566222359</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772566222359</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +213,7 @@
     <MESSAGE value="Primul gui in clasa separata" />
     <MESSAGE value="workspace" />
     <MESSAGE value="manager prim" />
-    <option name="LAST_COMMIT_MESSAGE" value="manager prim" />
+    <MESSAGE value="manager functii de citire" />
+    <option name="LAST_COMMIT_MESSAGE" value="manager functii de citire" />
   </component>
 </project>

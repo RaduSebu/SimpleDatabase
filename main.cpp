@@ -5,17 +5,23 @@
 #include "gui.h"
 
 using namespace std;
-fstream ff("database", ios::in | ios::out);
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     manager m;
-    manager::item item = m.getline(0);
-    cout << item.name;
+    manager::item item;
+    item.name = "ok";
+    item.count = 1;
+    item.price = 1.5;
+    item.description = "un_item";
+    manager::setline(1, item);
 
-    gui *interface = new gui();
-    interface->exec();
+    manager::item item2 = manager::getline(1);
+    cout << item2.name << endl;
+    cout << item2.count << endl;
+    cout << item2.price << endl;
+    cout << item2.description << endl;
 
-    return QApplication::exec();
+    return 0;
 }
