@@ -9,7 +9,6 @@ private:
     QWidget* w;
 public:
     gui();
-
     void exec();
 };
 
