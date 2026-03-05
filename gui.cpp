@@ -1,6 +1,5 @@
 #include "gui.h"
 #include <QPushButton>
-#include <QVBoxLayout>
 
 gui::gui() {
     w = new QWidget();

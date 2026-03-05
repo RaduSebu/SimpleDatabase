@@ -26,10 +26,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="manager functii de citire si scriere">
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.h" beforeDir="false" afterPath="$PROJECT_DIR$/gui.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database" beforeDir="false" afterPath="$PROJECT_DIR$/data/database" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/manager.h" afterDir="false" />
@@ -123,7 +122,8 @@
       <workItem from="1772377653907" duration="30000" />
       <workItem from="1772560531267" duration="5209000" />
       <workItem from="1772619961325" duration="2961000" />
-      <workItem from="1772623162563" duration="3739000" />
+      <workItem from="1772623162563" duration="11095000" />
+      <workItem from="1772734948933" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -205,7 +205,31 @@
       <option name="project" value="LOCAL" />
       <updated>1772622617037</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="manager complet">
+      <option name="closed" value="true" />
+      <created>1772627050644</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1772627050644</updated>
+    </task>
+    <task id="LOCAL-00012" summary="gui inceput rau de tot">
+      <option name="closed" value="true" />
+      <created>1772627077699</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1772627077699</updated>
+    </task>
+    <task id="LOCAL-00013" summary="basic main care executa aplicatia si printeaza database">
+      <option name="closed" value="true" />
+      <created>1772627111922</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1772627111922</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +250,9 @@
     <MESSAGE value="manager prim" />
     <MESSAGE value="manager functii de citire" />
     <MESSAGE value="manager functii de citire si scriere" />
-    <option name="LAST_COMMIT_MESSAGE" value="manager functii de citire si scriere" />
+    <MESSAGE value="manager complet" />
+    <MESSAGE value="gui inceput rau de tot" />
+    <MESSAGE value="basic main care executa aplicatia si printeaza database" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic main care executa aplicatia si printeaza database" />
   </component>
 </project>

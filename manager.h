@@ -29,6 +29,7 @@ public:
     static item getline(int line);
     static items getalllines();
     static void addline(item item);
+    static void removeline(int line);
     static int getnumberoflines();
 
     string getinfo();

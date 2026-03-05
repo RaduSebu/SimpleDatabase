@@ -5,6 +5,7 @@
 #include <vector>
 fstream f("data/database", ios::in | ios::out | ios::app);
 string s;
+const manager::item voiditem{"!NULL"};
 using namespace std;
 manager::manager() {
     if (f.is_open()) {
@@ -34,10 +35,15 @@ void manager::setline(int line, item item) {
     }
     f.close();
 
-    std::ostringstream sout;
-    sout << item.name << ' ' << item.count << ' ' << item.price << ' ' << item.description;
-    lines[line - 1] = sout.str();
-    cout << "wrote line to file\n";
+    if (item.name != "!NULL") {
+        std::ostringstream sout;
+        sout << item.name << ' ' << item.count << ' ' << item.price << ' ' << item.description;
+        lines[line - 1] = sout.str();
+        cout << "wrote line to file\n";
+    }
+    else {
+        lines[line - 1] = "\n";
+    }
 
     f.open("data/database", ios::out | ios::trunc);
     for (string& l : lines) {
@@ -83,6 +89,14 @@ int manager::getnumberoflines() {
 void manager::addline(item item) {
     items items = getalllines();
     setline(items.nr + 1, item);
+}
+
+void manager::removeline(int line) {
+    int n = getnumberoflines();
+    for (int i = line + 1; i <= n; i++) {
+        setline(i - 1, getline(i));
+    }
+    setline(n, voiditem);
 }
 
 string manager::getinfo() {

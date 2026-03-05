@@ -2,7 +2,6 @@
 #define PROIECTINFO_GUI_H
 
 #include <QPushButton>
-#include <QVBoxLayout>
 
 class gui {
 private:
