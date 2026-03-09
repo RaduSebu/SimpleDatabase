@@ -26,15 +26,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="manager complet">
-      <change afterPath="$PROJECT_DIR$/console.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database" beforeDir="false" afterPath="$PROJECT_DIR$/data/database" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="unversioned">
       <change beforePath="$PROJECT_DIR$/manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/manager.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +126,7 @@
       <workItem from="1772623162563" duration="11095000" />
       <workItem from="1772734948933" duration="1035000" />
       <workItem from="1772787786589" duration="8000" />
-      <workItem from="1773036328588" duration="7447000" />
+      <workItem from="1773036328588" duration="7635000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -247,7 +240,31 @@
       <option name="project" value="LOCAL" />
       <updated>1772735150874</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="versiunea 1.0">
+      <option name="closed" value="true" />
+      <created>1773043896720</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1773043896720</updated>
+    </task>
+    <task id="LOCAL-00016" summary="unversioned">
+      <option name="closed" value="true" />
+      <created>1773043933194</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1773043933194</updated>
+    </task>
+    <task id="LOCAL-00017" summary="unversioned">
+      <option name="closed" value="true" />
+      <created>1773043957688</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1773043957688</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +288,8 @@
     <MESSAGE value="gui inceput rau de tot" />
     <MESSAGE value="basic main care executa aplicatia si printeaza database" />
     <MESSAGE value="manager complet" />
-    <option name="LAST_COMMIT_MESSAGE" value="manager complet" />
+    <MESSAGE value="versiunea 1.0" />
+    <MESSAGE value="unversioned" />
+    <option name="LAST_COMMIT_MESSAGE" value="unversioned" />
   </component>
 </project>

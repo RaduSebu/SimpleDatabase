@@ -99,7 +99,7 @@ void manager::removeline(int line) {
 }
 
 string manager::getinfo() {
-    return "Facut cu    de Radu Andrei Sebastian!";
+    return "Made with    by Radu Andrei Sebastian!";
 }
 
 void manager::printitem(item item) {
