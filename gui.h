@@ -4,11 +4,8 @@
 #include <QPushButton>
 
 class gui {
-private:
-    QWidget* w;
 public:
-    gui();
-    void exec();
+    static void execute();
 };
 
 #endif //PROIECTINFO_GUI_H

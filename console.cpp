@@ -56,15 +56,15 @@ Simple Database
                 }
             }
         }
-        else if (command == "set") {
+        else if (command == "edit") {
             string setting;
             cout << "What to set: "; cin >> setting;
             if (setting == "price") {
                 double price;
                 string name;
 
-                cout << "Price: "; cin >> price;
                 cout << "Item: "; cin >> name;
+                cout << "Price: "; cin >> price;
 
                 for (int i = 1; i <= manager::getnumberoflines() + 1; i++) {
                     if (i == manager::getnumberoflines() + 1) {
@@ -91,8 +91,8 @@ Simple Database
                 int count;
                 string name;
 
-                cout << "Count: "; cin >> count;
                 cout << "Item: "; cin >> name;
+                cout << "Count: "; cin >> count;
 
                 for (int i = 1; i <= manager::getnumberoflines() + 1; i++) {
                     if (i == manager::getnumberoflines() + 1) {
@@ -118,8 +118,8 @@ Simple Database
                 string description;
                 string name;
 
-                cout << "Description: "; cin >> description;
                 cout << "Item: "; cin >> name;
+                cout << "Description: "; cin >> description;
 
                 for (int i = 1; i <= manager::getnumberoflines() + 1; i++) {
                     if (i == manager::getnumberoflines() + 1) {
@@ -136,7 +136,34 @@ Simple Database
                         item.price = manager::getline(i).price;
 
                         manager::setline(i, item);
-                        cout << name << " desciption changed to " << description << '\n';
+                        cout << name << " description changed to " << description << '\n';
+                        break;
+                    }
+                }
+            }
+            else if (setting == "name") {
+                string newname;
+                string name;
+
+                cout << "Item: "; cin >> name;
+                cout << "NewName: "; cin >> newname;
+
+                for (int i = 1; i <= manager::getnumberoflines() + 1; i++) {
+                    if (i == manager::getnumberoflines() + 1) {
+                        cout << "No such item";
+                        break;
+                    }
+
+                    if (manager::getline(i).name == name) {
+                        manager::item item;
+                        item.name = newname;
+
+                        item.description = manager::getline(i).description;
+                        item.count = manager::getline(i).count;
+                        item.price = manager::getline(i).price;
+
+                        manager::setline(i, item);
+                        cout << name << " name changed to " << newname << '\n';
                         break;
                     }
                 }
@@ -144,7 +171,7 @@ Simple Database
             else cout << "No such field";
         }
         else if (command == "help") {
-            cout << "List of available commands:\nadd, remove, list, set, info, exit, help\n";
+            cout << "List of available commands:\nadd, remove, list, edit, info, exit, help\n";
         }
         else if (command == "info") {
             cout << manager::getinfo() << '\n';

@@ -17,9 +17,8 @@ int main(int argc, char *argv[]) {
         console::execute();
         return 0;
     }
-    else if (argc > 1 && (!strcmp(argv[1], "--gui") || !strcmp(argv[1], "-g"))) {
-        gui g;
-        g.exec();
+    else if (argc > 1 && (!strcmp(argv[1], "--graphical") || !strcmp(argv[1], "-g"))) {
+        gui::execute();
         return app.exec();
     }
     else if (argc > 1 && (!strcmp(argv[1], "--version") || !strcmp(argv[1], "-v"))) {
