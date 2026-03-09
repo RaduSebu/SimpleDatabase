@@ -10,6 +10,7 @@ void console::execute() {
     cin >> command;
     while (command != "exit") {
         if (command == "list") {
+            cout << "[NAME] [COUNT] [PRICE] [DESCRIPTION]\n";
             manager::printitems(manager::getalllines());
         }
         else if (command == "add") {
