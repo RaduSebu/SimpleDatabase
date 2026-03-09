@@ -3,8 +3,8 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-fstream f("data/database", ios::in | ios::out | ios::app);
-string s;
+string s, file = "data/database";
+fstream f(file, ios::in | ios::out | ios::app);
 const manager::item voiditem{"!NULL"};
 using namespace std;
 manager::manager() {
@@ -25,7 +25,7 @@ manager::manager() {
 
 void manager::setline(int line, item item) {
     f.close();
-    f.open("data/database", ios::in);
+    f.open(file, ios::in);
     f.clear();
 
     vector<std::string> lines;
@@ -39,13 +39,12 @@ void manager::setline(int line, item item) {
         std::ostringstream sout;
         sout << item.name << ' ' << item.count << ' ' << item.price << ' ' << item.description;
         lines[line - 1] = sout.str();
-        cout << "wrote line to file\n";
     }
     else {
         lines[line - 1] = "\n";
     }
 
-    f.open("data/database", ios::out | ios::trunc);
+    f.open(file, ios::out | ios::trunc);
     for (string& l : lines) {
         f << l << "\n";
     }
@@ -53,7 +52,7 @@ void manager::setline(int line, item item) {
 
 manager::item manager::getline(int line) {
     f.close();
-    f.open("data/database");
+    f.open(file);
     f.clear();
 
     int i = 0;
@@ -100,7 +99,7 @@ void manager::removeline(int line) {
 }
 
 string manager::getinfo() {
-    return "Facut cu iubire de Radu Andrei Sebastian!";
+    return "Facut cu    de Radu Andrei Sebastian!";
 }
 
 void manager::printitem(item item) {

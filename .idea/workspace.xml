@@ -26,8 +26,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="">
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="manager complet">
+      <change afterPath="$PROJECT_DIR$/console.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/database" beforeDir="false" afterPath="$PROJECT_DIR$/data/database" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager.cpp" afterDir="false" />
@@ -99,7 +102,12 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="ProiectInfo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ProiectInfo" TARGET_NAME="ProiectInfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ProiectInfo" RUN_TARGET_NAME="ProiectInfo">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProiectInfo" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-g" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ProiectInfo" TARGET_NAME="ProiectInfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ProiectInfo" RUN_TARGET_NAME="ProiectInfo">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -123,7 +131,9 @@
       <workItem from="1772560531267" duration="5209000" />
       <workItem from="1772619961325" duration="2961000" />
       <workItem from="1772623162563" duration="11095000" />
-      <workItem from="1772734948933" duration="7000" />
+      <workItem from="1772734948933" duration="1035000" />
+      <workItem from="1772787786589" duration="8000" />
+      <workItem from="1773036328588" duration="7447000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -229,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772627111922</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="manager complet">
+      <option name="closed" value="true" />
+      <created>1772735150874</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1772735150874</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,9 +268,9 @@
     <MESSAGE value="manager prim" />
     <MESSAGE value="manager functii de citire" />
     <MESSAGE value="manager functii de citire si scriere" />
-    <MESSAGE value="manager complet" />
     <MESSAGE value="gui inceput rau de tot" />
     <MESSAGE value="basic main care executa aplicatia si printeaza database" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic main care executa aplicatia si printeaza database" />
+    <MESSAGE value="manager complet" />
+    <option name="LAST_COMMIT_MESSAGE" value="manager complet" />
   </component>
 </project>

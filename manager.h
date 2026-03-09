@@ -31,10 +31,11 @@ public:
     static void addline(item item);
     static void removeline(int line);
     static int getnumberoflines();
+    static void changefile(string ff);
 
-    string getinfo();
-    void printitem(item item);
-    void printitems(items items);
+    static string getinfo();
+    static void printitem(item item);
+    static void printitems(items items);
 };
 
 

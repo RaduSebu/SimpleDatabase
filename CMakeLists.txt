@@ -9,6 +9,8 @@ add_executable(ProiectInfo main.cpp
         gui.cpp
         manager.cpp
         manager.h
+        console.cpp
+        console.h
 )
 
 target_link_libraries(ProiectInfo PRIVATE Qt6::Widgets)
