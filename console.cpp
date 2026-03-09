@@ -136,7 +136,7 @@ void console::execute() {
             else cout << "No such field";
         }
         else if (command == "help") {
-            cout << "List of available commands:\nadd, remove, list, info, exit, help\n";
+            cout << "List of available commands:\nadd, remove, list, set, info, exit, help\n";
         }
         else if (command == "info") {
             cout << manager::getinfo() << '\n';

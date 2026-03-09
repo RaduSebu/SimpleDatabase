@@ -26,8 +26,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="unversioned">
-      <change beforePath="$PROJECT_DIR$/manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager.cpp" afterDir="false" />
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="database">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/console.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,7 @@
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProiectInfo" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-g" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ProiectInfo" TARGET_NAME="ProiectInfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ProiectInfo" RUN_TARGET_NAME="ProiectInfo">
+    <configuration name="ProiectInfo" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-t" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ProiectInfo" TARGET_NAME="ProiectInfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ProiectInfo" RUN_TARGET_NAME="ProiectInfo">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -126,7 +127,7 @@
       <workItem from="1772623162563" duration="11095000" />
       <workItem from="1772734948933" duration="1035000" />
       <workItem from="1772787786589" duration="8000" />
-      <workItem from="1773036328588" duration="7635000" />
+      <workItem from="1773036328588" duration="7868000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -264,7 +265,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773043957688</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="translation">
+      <option name="closed" value="true" />
+      <created>1773044011453</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1773044011453</updated>
+    </task>
+    <task id="LOCAL-00019" summary="database">
+      <option name="closed" value="true" />
+      <created>1773044160517</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1773044160517</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +307,8 @@
     <MESSAGE value="manager complet" />
     <MESSAGE value="versiunea 1.0" />
     <MESSAGE value="unversioned" />
-    <option name="LAST_COMMIT_MESSAGE" value="unversioned" />
+    <MESSAGE value="translation" />
+    <MESSAGE value="database" />
+    <option name="LAST_COMMIT_MESSAGE" value="database" />
   </component>
 </project>
