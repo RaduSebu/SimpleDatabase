@@ -26,9 +26,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="database">
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="sdb logo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/console.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/console.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database" beforeDir="false" afterPath="$PROJECT_DIR$/data/database" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +125,9 @@
       <workItem from="1772787786589" duration="8000" />
       <workItem from="1773036328588" duration="7904000" />
       <workItem from="1773044891037" duration="126000" />
-      <workItem from="1773046826650" duration="529000" />
+      <workItem from="1773046826650" duration="639000" />
+      <workItem from="1773062857315" duration="104000" />
+      <workItem from="1773086334412" duration="745000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -286,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773044237131</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="sdb logo">
+      <option name="closed" value="true" />
+      <created>1773047442495</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1773047442495</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +325,7 @@
     <MESSAGE value="unversioned" />
     <MESSAGE value="translation" />
     <MESSAGE value="database" />
-    <option name="LAST_COMMIT_MESSAGE" value="database" />
+    <MESSAGE value="sdb logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="sdb logo" />
   </component>
 </project>

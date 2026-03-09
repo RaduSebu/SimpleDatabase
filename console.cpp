@@ -45,7 +45,7 @@ Simple Database
 
             for (int i = 1; i <= manager::getnumberoflines() + 1; i++) {
                 if (i == manager::getnumberoflines() + 1) {
-                    cout << "No such item";
+                    cout << "No such item\n";
                     break;
                 }
 
