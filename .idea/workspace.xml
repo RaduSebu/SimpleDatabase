@@ -96,11 +96,6 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProiectInfo" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-t" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ProiectInfo" TARGET_NAME="ProiectInfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ProiectInfo" RUN_TARGET_NAME="ProiectInfo">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -127,7 +122,9 @@
       <workItem from="1772623162563" duration="11095000" />
       <workItem from="1772734948933" duration="1035000" />
       <workItem from="1772787786589" duration="8000" />
-      <workItem from="1773036328588" duration="7868000" />
+      <workItem from="1773036328588" duration="7904000" />
+      <workItem from="1773044891037" duration="126000" />
+      <workItem from="1773046826650" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -281,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773044160517</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="database">
+      <option name="closed" value="true" />
+      <created>1773044237131</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1773044237131</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

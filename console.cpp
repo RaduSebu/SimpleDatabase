@@ -6,6 +6,14 @@
 using namespace std;
 string command;
 void console::execute() {
+    cout << R"(
+ _____   ____    ____
+/ ___/  |  _ \  | __ )
+\___ \  | | | | |  _ \
+ ___) | | |_| | | |_) |
+|____/  |____/  |____/
+Simple Database
+)";
     cout << "[sdb]: ";
     cin >> command;
     while (command != "exit") {
