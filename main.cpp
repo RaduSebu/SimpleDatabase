@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
         return app.exec();
     }
     else if (argc > 1 && (!strcmp(argv[1], "--version") || !strcmp(argv[1], "-v"))) {
-        cout << "Version 1.1";
+        cout << manager::getversion();
         return 0;
     }
     else if (argc > 1 && (!strcmp(argv[1], "--info") || !strcmp(argv[1], "-i"))) {

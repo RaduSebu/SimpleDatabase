@@ -34,6 +34,8 @@ public:
     static void changefile(string ff);
 
     static string getinfo();
+    static string getversion();
+
     static void printitem(item item);
     static void printitems(items items);
 };

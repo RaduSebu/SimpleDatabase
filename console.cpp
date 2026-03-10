@@ -171,10 +171,13 @@ Simple Database
             else cout << "No such field";
         }
         else if (command == "help") {
-            cout << "List of available commands:\nadd, remove, list, edit, info, exit, help\n";
+            cout << "List of available commands:\nadd, remove, list, edit, info, exit, help, version\n";
         }
         else if (command == "info") {
             cout << manager::getinfo() << '\n';
+        }
+        else if (command == "version") {
+            cout << manager::getversion() << '\n';
         }
         else {
             cout << "No such command";
