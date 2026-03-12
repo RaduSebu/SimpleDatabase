@@ -1,7 +1,4 @@
 #include "gui.h"
-
-#include <iostream>
-
 #include "manager.h"
 #include <QWidget>
 #include <QVBoxLayout>
