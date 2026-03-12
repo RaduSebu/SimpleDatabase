@@ -44,7 +44,7 @@ void gui::execute() {
     for (int i = 1; i < manager::getnumberoflines() + 1; i++) {
         std::ostringstream sout;
         manager::item item = manager::getline(i);
-        sout << item.name << ' ' << item.count << ' ' << item.price << ' ' << item.description;
+        sout << item.name << "  |  " << item.count << "  |  " << item.price << "  |  " << item.description;
 
         QString s;
         s.assign(sout.str());
@@ -58,7 +58,7 @@ void gui::execute() {
         for (int i = 1; i < manager::getnumberoflines() + 1; i++) {
             std::ostringstream sout;
             manager::item item = manager::getline(i);
-            sout << item.name << ' ' << item.count << ' ' << item.price << ' ' << item.description;
+            sout << item.name << "  |  " << item.count << "  |  " << item.price << "  |  " << item.description;
 
             QString s;
             s.assign(sout.str());

@@ -99,11 +99,11 @@ void manager::removeline(int line) {
 }
 
 string manager::getinfo() {
-    return "Made with     by Radu Andrei Sebastian!";
+    return "Made with     by Radu Andrei Sebastian and Stanescu Mihai Stefan!";
 }
 
 string manager::getversion() {
-    return "Current version: 1.5";
+    return "Current version: 1.6";
 }
 
 void manager::printitem(item item) {
