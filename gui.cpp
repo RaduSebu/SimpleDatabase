@@ -8,15 +8,19 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QDialog>
+#include <QIcon>
 
 void gui::execute() {
     QWidget *window = new QWidget();
     QHBoxLayout *layouth = new QHBoxLayout();
     QVBoxLayout *layoutv1 = new QVBoxLayout();
     QVBoxLayout *layoutv2 = new QVBoxLayout();
+    QIcon icon = QIcon("data/Icon.jpg");
 
     QListWidget *list = new QListWidget();
     QLabel *label = new QLabel("[NAME]   [COUNT]   [PRICE]   [DESCRIPTION]");
+    QLabel *picture = new QLabel();
+    picture->setPixmap(QPixmap(icon.pixmap(100,100)));
 
     QPushButton *buttonAdd = new QPushButton("ADD");
     QPushButton *buttonEdit = new QPushButton("EDIT");
@@ -29,6 +33,7 @@ void gui::execute() {
     layoutv1->addWidget(buttonEdit);
     layoutv1->addWidget(buttonRemove);
     layoutv1->addStretch();
+    layoutv1->addWidget(picture);
     layoutv1->addWidget(buttonCount);
     layoutv1->addWidget(buttonInfo);
 
@@ -43,7 +48,7 @@ void gui::execute() {
     window->setLayout(layouth);
     window->setBaseSize(600, 500);
     window->setFixedSize(600,500);
-
+    window->setWindowIcon(icon);
     for (int i = 1; i < manager::getnumberoflines() + 1; i++) {
         std::ostringstream sout;
         manager::item item = manager::getline(i);

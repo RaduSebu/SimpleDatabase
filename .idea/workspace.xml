@@ -26,11 +26,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="adaugare Mihai">
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="first release">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database" beforeDir="false" afterPath="$PROJECT_DIR$/data/database" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gui.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,8 @@
       <workItem from="1773086334412" duration="3776000" />
       <workItem from="1773167342039" duration="3593000" />
       <workItem from="1773216128971" duration="205000" />
-      <workItem from="1773302045444" duration="3816000" />
+      <workItem from="1773302045444" duration="4558000" />
+      <workItem from="1773306622769" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -333,7 +332,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773303659149</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="first release">
+      <option name="closed" value="true" />
+      <created>1773305880400</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1773305880400</updated>
+    </task>
+    <task id="LOCAL-00027" summary="first release">
+      <option name="closed" value="true" />
+      <created>1773305981146</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1773305981146</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +380,7 @@
     <MESSAGE value="gui first steps" />
     <MESSAGE value="gui refresh and info buttons" />
     <MESSAGE value="adaugare Mihai" />
-    <option name="LAST_COMMIT_MESSAGE" value="adaugare Mihai" />
+    <MESSAGE value="first release" />
+    <option name="LAST_COMMIT_MESSAGE" value="first release" />
   </component>
 </project>
