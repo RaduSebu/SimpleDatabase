@@ -1,4 +1,7 @@
 #include "gui.h"
+
+#include <iostream>
+
 #include "manager.h"
 #include <QWidget>
 #include <QVBoxLayout>
@@ -6,7 +9,8 @@
 #include <QPushButton>
 #include <QListWidget>
 #include <QLabel>
-#include <QSpacerItem>
+#include <QLineEdit>
+#include <QDialog>
 
 void gui::execute() {
     QWidget *window = new QWidget();
@@ -20,6 +24,7 @@ void gui::execute() {
     QPushButton *buttonAdd = new QPushButton("ADD");
     QPushButton *buttonEdit = new QPushButton("EDIT");
     QPushButton *buttonRemove = new QPushButton("REMOVE");
+    QPushButton *buttonCount = new QPushButton("NUMBER");
     QPushButton *buttonRefresh = new QPushButton("REFRESH");
     QPushButton *buttonInfo = new QPushButton("INFO");
 
@@ -27,6 +32,7 @@ void gui::execute() {
     layoutv1->addWidget(buttonEdit);
     layoutv1->addWidget(buttonRemove);
     layoutv1->addStretch();
+    layoutv1->addWidget(buttonCount);
     layoutv1->addWidget(buttonInfo);
 
     layoutv2->addWidget(label);
@@ -73,8 +79,127 @@ void gui::execute() {
         QString s;
         s.assign(ss.str());
         QLabel *labelInfo = new QLabel(s);
+        labelInfo->setFixedSize(400,50);
+        labelInfo->show();
+    });
+
+    QObject::connect(buttonCount, &QPushButton::clicked, []() {
+        std::ostringstream ss;
+        ss << "Number of items: " << manager::getnumberoflines();
+        QString s;
+        s.assign(ss.str());
+        QLabel *labelInfo = new QLabel(s);
         labelInfo->setFixedSize(300,50);
         labelInfo->show();
+    });
+
+    QObject::connect(buttonRemove, &QPushButton::clicked, [list]() {
+        QListWidgetItem* selected = list->currentItem();
+        if (selected == nullptr) return;
+
+        int line = list->row(selected) + 1;
+        manager::removeline(line);
+    });
+
+    QObject::connect(buttonAdd, &QPushButton::clicked, [list]() {
+        QDialog *dialog = new QDialog();
+        dialog->setWindowTitle("Add Item");
+        dialog->setFixedSize(300,200);
+
+        QVBoxLayout *layout = new QVBoxLayout();
+
+        QLineEdit *inputName = new QLineEdit();
+        QLineEdit *inputCount = new QLineEdit();
+        QLineEdit *inputPrice = new QLineEdit();
+        QLineEdit *inputDescription = new QLineEdit();
+
+        inputName->setPlaceholderText("Name");
+        inputCount->setPlaceholderText("Count");
+        inputPrice->setPlaceholderText("Price");
+        inputDescription->setPlaceholderText("Description");
+
+        QPushButton *buttonConfirm = new QPushButton("CONFIRM");
+        QPushButton *buttonCancel = new QPushButton("CANCEL");
+
+        QHBoxLayout *buttons = new QHBoxLayout();
+        buttons->addWidget(buttonCancel);
+        buttons->addWidget(buttonConfirm);
+
+        layout->addWidget(inputName);
+        layout->addWidget(inputCount);
+        layout->addWidget(inputPrice);
+        layout->addWidget(inputDescription);
+        layout->addLayout(buttons);
+
+        dialog->setLayout(layout);
+
+        QObject::connect(buttonConfirm, &QPushButton::clicked, [=]() {
+            manager::item newItem;
+
+            newItem.name = inputName->text().toStdString();
+            newItem.count = inputCount->text().toInt();
+            newItem.price = inputPrice->text().toDouble();
+            newItem.description = inputDescription->text().toStdString();
+
+            manager::addline(newItem);
+
+            dialog->close();
+        });
+
+        QObject::connect(buttonCancel, &QPushButton::clicked, [=]() {
+            dialog->close();
+        });
+        dialog->show();
+    });
+
+    QObject::connect(buttonEdit, &QPushButton::clicked, [list]() {
+        QListWidgetItem* selected = list->currentItem();
+        if (!selected) return;
+
+        int line = list->row(selected) + 1;
+        manager::item item = manager::getline(line);
+
+        QDialog *dialog = new QDialog();
+        dialog->setWindowTitle("Edit Item");
+        dialog->setFixedSize(300,200);
+        QVBoxLayout *layout = new QVBoxLayout();
+
+        QLineEdit *inputName = new QLineEdit(QString::fromStdString(item.name));
+        QLineEdit *inputCount = new QLineEdit(QString::number(item.count));
+        QLineEdit *inputPrice = new QLineEdit(QString::number(item.price));
+        QLineEdit *inputDescription = new QLineEdit(QString::fromStdString(item.description));
+
+        QPushButton *buttonConfirm = new QPushButton("CONFIRM");
+        QPushButton *buttonCancel = new QPushButton("CANCEL");
+
+        QHBoxLayout *buttons = new QHBoxLayout();
+        buttons->addWidget(buttonConfirm);
+        buttons->addWidget(buttonCancel);
+
+        layout->addWidget(inputName);
+        layout->addWidget(inputCount);
+        layout->addWidget(inputPrice);
+        layout->addWidget(inputDescription);
+        layout->addLayout(buttons);
+
+        dialog->setLayout(layout);
+
+        QObject::connect(buttonConfirm, &QPushButton::clicked, [=]() {
+            manager::item newItem;
+
+            newItem.name = inputName->text().toStdString();
+            newItem.count = inputCount->text().toInt();
+            newItem.price = inputPrice->text().toDouble();
+            newItem.description = inputDescription->text().toStdString();
+
+            manager::setline(line, newItem);
+            dialog->close();
+        });
+
+        QObject::connect(buttonCancel, &QPushButton::clicked, [=]() {
+            dialog->close();
+        });
+        dialog->show();
     });
 
     window->show();

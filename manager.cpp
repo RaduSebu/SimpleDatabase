@@ -103,7 +103,7 @@ string manager::getinfo() {
 }
 
 string manager::getversion() {
-    return "Current version: 1.6";
+    return "Current version: 1.7";
 }
 
 void manager::printitem(item item) {
