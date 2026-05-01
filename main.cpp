@@ -9,7 +9,7 @@ using namespace std;
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
-    if (argc == 1 || !strcmp(argv[1], "--help") || !strcmp(argv[1], "-h")) {
+    if (argc > 1 && (!strcmp(argv[1], "--help") || !strcmp(argv[1], "-h"))) {
         cout << "Usage:\n-h --help shows this\n-g --gui shows gui version of program\n-t --terminal shows terminal version of program\n-v --version shows version info\n-i --info shows info about the creator";
         return 0;
     }
@@ -32,5 +32,9 @@ int main(int argc, char *argv[]) {
     else if (argc > 1) {
         cout << "Invalid usage\nrefer to -h or --help for command usage";
         return 2;
+    }
+    else {
+        console::execute();
+        return 0;
     }
 }

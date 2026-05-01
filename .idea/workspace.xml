@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="3" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
@@ -26,9 +27,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="first release">
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="first release cu pingulin">
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database" beforeDir="false" afterPath="$PROJECT_DIR$/data/database" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gui.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +59,9 @@
     &quot;accountId&quot;: &quot;d853f521-72ca-45ae-8086-160ce59705ea&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/manager.cpp" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="uqwT70jR" />
   </component>
@@ -130,7 +138,16 @@
       <workItem from="1773167342039" duration="3593000" />
       <workItem from="1773216128971" duration="205000" />
       <workItem from="1773302045444" duration="4558000" />
-      <workItem from="1773306622769" duration="7000" />
+      <workItem from="1773306622769" duration="394000" />
+      <workItem from="1773327030085" duration="540000" />
+      <workItem from="1773417456546" duration="446000" />
+      <workItem from="1773471446286" duration="10000" />
+      <workItem from="1774430764846" duration="3380000" />
+      <workItem from="1777366384973" duration="1486000" />
+      <workItem from="1777464052292" duration="1976000" />
+      <workItem from="1777550703138" duration="1952000" />
+      <workItem from="1777552712445" duration="160000" />
+      <workItem from="1777632589414" duration="3865000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -348,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773305981146</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="first release cu pingulin">
+      <option name="closed" value="true" />
+      <created>1773306709137</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1773306709137</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +406,7 @@
     <MESSAGE value="gui refresh and info buttons" />
     <MESSAGE value="adaugare Mihai" />
     <MESSAGE value="first release" />
-    <option name="LAST_COMMIT_MESSAGE" value="first release" />
+    <MESSAGE value="first release cu pingulin" />
+    <option name="LAST_COMMIT_MESSAGE" value="first release cu pingulin" />
   </component>
 </project>

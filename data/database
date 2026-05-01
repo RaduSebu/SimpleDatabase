@@ -1,12 +1,8 @@
-Prosop 5000 49.99 Prosopul_se_folosește_pentru_a_îți_usca_corpul
-Feon 607 267.0 Feonul_este_instrumentul_folosit_pentru_a_ne_usca_părul
-Săpun 67000 4.0 Săpunul_este_folosit_pentru_a_ne_curăța_corpul
+Feon 602 267 Feonul_este_instrumentul_folosit_pentru_a_ne_usca_părul
+Săpun 67000 4 Săpunul_este_folosit_pentru_a_ne_curăța_corpul
 Șampon 10000 10.99 Șamponul_este_folosit_pentru_curățarea_părului
-Parfum 7500 150.0 Parfumul_este_folosit_pentru_a_ne_ajuta_să_avem_un_miros_plăcut
+Parfum 7500 150 Parfumul_este_folosit_pentru_a_ne_ajuta_să_avem_un_miros_plăcut
 Deodorant 9000 20.99 Deodorantul_este_folosit_petru_a_preveni_mirosurile_urâte_sau_pentru_a_le_ascunde
-Mască_de_față 20000 7.99 Masca_de_față_îți_relaxează_tenul_și_țil_vindecă
-Pieptăn 15000 3.99 Pieptănul_îți_descâlcește_părul
-Placă_de_păr 900 300 Placa_de_păr_îți_îndreaptă_părul
 Ondulator 700 450 Ondulatorul_îți_ondulează_părul
 Strugurel 6500 10 Strugurelul_previne_buzele_din_a_se_crăpa
 Unghieră 1500 5 Unghiera_te_ajută_să_îți_tai_unghile
@@ -65,6 +61,13 @@ Irigator_bucal 120 184 Irigatorul_bucal_curăță_spațiile_interdentare_cu_un_j
 Ață_dentară 7000 9 Ața_dentară_te_ajută_să_te_cureți_printre_dinți
 Apă_de_gură 4999 24.99 Apa_de_gură_te_ajută_să_îți_dezinfectezi_gura_de_bacterile_care_sau_format
 Mihai 1 1e+07 Mihai_este_numit_si_miahi
+Prosop 45 5.99 prosop_de_corp
+
+
+
+
+
+
 
 
 

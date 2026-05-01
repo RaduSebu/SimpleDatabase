@@ -9,6 +9,33 @@
 #include <QLineEdit>
 #include <QDialog>
 #include <QIcon>
+#include <algorithm>
+int n = 0;
+
+bool cmp1(manager::item a, manager::item b) {
+    return (strcmp(a.name.c_str(), b.name.c_str()) < 0);
+}
+
+bool cmp2(manager::item a, manager::item b) {
+    return (strcmp(a.name.c_str(), b.name.c_str()) > 0);
+}
+
+bool cmp3(manager::item a, manager::item b) {
+    return (a.count > b.count);
+}
+
+bool cmp4(manager::item a, manager::item b) {
+    return (a.count < b.count);
+}
+
+bool cmp5(manager::item a, manager::item b) {
+    return (a.price > b.price);
+}
+
+bool cmp6(manager::item a, manager::item b) {
+    return (a.price < b.price);
+}
+
 
 void gui::execute() {
     QWidget *window = new QWidget();
@@ -21,20 +48,21 @@ void gui::execute() {
     QLabel *label = new QLabel("[NAME]   [COUNT]   [PRICE]   [DESCRIPTION]");
     QLabel *picture = new QLabel();
     picture->setPixmap(QPixmap(icon.pixmap(100,100)));
-
-    QPushButton *buttonAdd = new QPushButton("ADD");
+   QPushButton *buttonAdd = new QPushButton("ADD");
     QPushButton *buttonEdit = new QPushButton("EDIT");
     QPushButton *buttonRemove = new QPushButton("REMOVE");
-    QPushButton *buttonCount = new QPushButton("NUMBER");
+    QPushButton *buttonCount = new QPushButton("ITEM COUNT");
     QPushButton *buttonRefresh = new QPushButton("REFRESH");
     QPushButton *buttonInfo = new QPushButton("INFO");
+    QPushButton *buttonSort = new QPushButton("SORT");
 
     layoutv1->addWidget(buttonAdd);
     layoutv1->addWidget(buttonEdit);
     layoutv1->addWidget(buttonRemove);
+    layoutv1->addWidget(buttonSort);
+    layoutv1->addWidget(buttonCount);
     layoutv1->addStretch();
     layoutv1->addWidget(picture);
-    layoutv1->addWidget(buttonCount);
     layoutv1->addWidget(buttonInfo);
 
     layoutv2->addWidget(label);
@@ -47,7 +75,6 @@ void gui::execute() {
     window->setWindowTitle("Simple Database");
     window->setLayout(layouth);
     window->setBaseSize(600, 500);
-    window->setFixedSize(600,500);
     window->setWindowIcon(icon);
     for (int i = 1; i < manager::getnumberoflines() + 1; i++) {
         std::ostringstream sout;
@@ -175,8 +202,8 @@ void gui::execute() {
         QPushButton *buttonCancel = new QPushButton("CANCEL");
 
         QHBoxLayout *buttons = new QHBoxLayout();
-        buttons->addWidget(buttonConfirm);
         buttons->addWidget(buttonCancel);
+        buttons->addWidget(buttonConfirm);
 
         layout->addWidget(inputName);
         layout->addWidget(inputCount);
@@ -202,6 +229,48 @@ void gui::execute() {
             dialog->close();
         });
         dialog->show();
+    });
+
+    QObject::connect(buttonSort, &QPushButton::clicked, [list]() {
+        list->clear();
+
+        manager::item items[10000];
+
+        for (int i = 1; i < manager::getnumberoflines() + 1; i++) {
+            items[i] = manager::getline(i);
+        }
+
+        if (n % 7 == 0) {
+            sort(items, items + manager::getnumberoflines() + 1, cmp1);
+        }
+        else if (n % 7 == 1) {
+            sort(items, items + manager::getnumberoflines() + 1, cmp2);
+        }
+        else if (n % 7 == 2) {
+            sort(items, items + manager::getnumberoflines() + 1, cmp3);
+        }
+        else if (n % 7 == 3) {
+            sort(items, items + manager::getnumberoflines() + 1, cmp4);
+        }
+        else if (n % 7 == 4) {
+            sort(items, items + manager::getnumberoflines() + 1, cmp5);
+        }
+        else if (n % 7 == 5) {
+            sort(items, items + manager::getnumberoflines() + 1, cmp6);
+        }
+
+        n++;
+
+        for (int i = 1; i < manager::getnumberoflines() + 1; i++) {
+            std::ostringstream sout;
+            manager::item item = items[i];
+
+            sout << item.name << "  |  " << item.count << "  |  " << item.price << "  |  " << item.description;
+
+            QString s;
+            s.assign(sout.str());
+            list->addItem(s);
+        }
     });
 
     window->show();
