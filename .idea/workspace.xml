@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="3" type="long" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="4" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
@@ -27,7 +27,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="functie sort" />
+    <list default="true" id="7285028a-8216-4d90-89e4-e625f865272a" name="Changes" comment="functie sort">
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database" beforeDir="false" afterPath="$PROJECT_DIR$/data/database" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +59,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/manager.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/manager.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="uqwT70jR" />
@@ -102,6 +108,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -140,7 +151,18 @@
       <workItem from="1777464052292" duration="1976000" />
       <workItem from="1777550703138" duration="1952000" />
       <workItem from="1777552712445" duration="160000" />
-      <workItem from="1777632589414" duration="4568000" />
+      <workItem from="1777632589414" duration="6200000" />
+      <workItem from="1777902877761" duration="1857000" />
+      <workItem from="1778394864176" duration="209000" />
+      <workItem from="1778395364743" duration="63000" />
+      <workItem from="1784753047977" duration="230000" />
+      <workItem from="1784807096321" duration="185000" />
+      <workItem from="1789204541203" duration="11000" />
+      <workItem from="1789660633851" duration="130000" />
+      <workItem from="1789910973380" duration="11000" />
+      <workItem from="1792159646920" duration="1158000" />
+      <workItem from="1792161082179" duration="375000" />
+      <workItem from="1792161560548" duration="2763000" />
     </task>
     <task id="LOCAL-00001" summary="Qt">
       <option name="closed" value="true" />
@@ -374,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777655498646</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="functie sort">
+      <option name="closed" value="true" />
+      <created>1777658894414</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1777658894414</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
